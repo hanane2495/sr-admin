@@ -1,0 +1,87 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color:rgb(216, 215, 215);
+}
+
+.sidebar{
+    height: 100%;
+    background: -webkit-linear-gradient( rgba(0, 0, 0, 0.9) 100%,transparent 100%), url(wahran2.jpg);
+    background-position: 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom-border{
+    border-bottom: 1px groove white;
+}
+
+.sidebar-link{
+    left: 0;
+    transition: all .4s;
+}
+
+.sidebar-link:hover{
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.current{
+    background-color:#339CC7;
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px #111;
+    transition: all .3s
+}
+
+.current:hover{
+    background-color: #339CC7;
+    border-radius: 7px;
+    box-shadow: 2px 5px 20px #111;
+    transform: translate(-1px);
+}
+
+.icon-parent{
+    position: relative;
+}
+
+.icon-bullet::after{
+    content:'';
+    position: absolute;
+    top: 7px;
+    left:15px;
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.card-commun{
+    box-shadow: 1px 2px 5px #999;
+    transition: all .4s;
+}
+
+.card-commun:hover{
+    box-shadow: 2px 3px 15px #999;
+    transform: translateY(-1px);
+}
+
+.container {
+    overflow: scroll;
+    height: 400px;
+  }
+
+  
+
+.thead th {
+    position: sticky;
+    top: 0;
+  }
+
+.tbody th {
+    position: sticky;
+    left: 0;
+  }
+
+.thead th:first-child {
+    left: 0;
+    z-index: 1;
+  }
